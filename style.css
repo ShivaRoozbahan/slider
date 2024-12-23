@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f0efef;
+}
+
+header {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  width: 8rem;
+}
+
+.main-icon {
+  align-content: center;
+}
+.icon {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+nav {
+  align-content: center;
+}
+.link-head {
+  color: #71717a;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+main {
+  background-image: url(/asesst/img/text.png);
+  background-size: 60rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  max-width: 55rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  /* aspect-ratio: 16/9; */
+  /* overflow-x: hidden; */
+  /* scroll-snap-type: x mandatory; */
+  scroll-behavior: smooth;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+}
+/* .slide {
+  min-width: 1000%;
+} */
+
+/* .slide img {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  margin-left: 15rem;
+} */
+
+.img1 {
+  margin-left: 15rem;
+}
+.img2 {
+  margin-left: 30rem;
+}
+.img3 {
+  margin-left: 30rem;
+}
+.img4 {
+  margin-left: 30rem;
+}
+
+.slider-btn {
+  text-align: center;
+}
+input {
+  display: none;
+}
+
+.label {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  border: 1.5px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  margin: 10px 5px;
+  width: 12px;
+  cursor: pointer;
+}
+.label1 {
+  background-color: #a6a4a4;
+}
+.label2 {
+  background-color: #4bbf47;
+}
+.label3 {
+  background-color: #050404;
+}
+.label4 {
+  background-color: #e31313;
+}
+
+/* .slider-btn {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+/* .slider-btn a {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: #f80000;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+} */
+
+/* .slider img {
+  flex: 1 1 50%;
+  scroll-snap-align: start;
+  object-fit: cover;
+} */
+.img-hed {
+  width: 25rem;
+}
+
+#slide1:checked ~ .slider {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slider {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slider {
+  transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slider {
+  transform: translateX(-300%);
+}
